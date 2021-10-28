@@ -4,6 +4,7 @@ let value = 0;
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send(`User accesses are: ${value}`);
+  value++;
 });
 
 module.exports = router;
